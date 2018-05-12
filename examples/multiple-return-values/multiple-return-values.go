@@ -1,27 +1,31 @@
-// Go has built-in support for _multiple return values_.
-// This feature is used often in idiomatic Go, for example
-// to return both result and error values from a function.
+// Go tem suporte interno para o _retorno múltiplo de valores_.
+// Esse recurso é usado frequentemente na idiomática do Go,
+// por exemplo, para retornar ambos valores de resultado e
+// erro de uma função.
 
 package main
 
 import "fmt"
 
-// The `(int, int)` in this function signature shows that
-// the function returns 2 `int`s.
+// O (int, int) nesta assinatura de função mostra que a
+// função retorna 2 `int`s.
 func vals() (int, int) {
-    return 3, 7
+	return 3, 7
 }
 
 func main() {
 
-    // Here we use the 2 different return values from the
-    // call with _multiple assignment_.
-    a, b := vals()
-    fmt.Println(a)
-    fmt.Println(b)
+	// Aqui usamos o retorno de dois valores diferentes
+	// da função com _atribuição múltipla_.
+	a, b := vals()
+	fmt.Println(a)
+	fmt.Println(b)
 
-    // If you only want a subset of the returned values,
-    // use the blank identifier `_`.
-    _, c := vals()
-    fmt.Println(c)
+	// If you only want a subset of the returned values,
+	// use the blank identifier `_`.
+
+	// Se você quiser apenas um subconjunto dos valores
+	// retornados, use o _identificador de ausência_ `_`.
+	_, c := vals()
+	fmt.Println(c)
 }
