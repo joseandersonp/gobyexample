@@ -37,7 +37,7 @@ $ tools/build-loop
 
 ### Publicando
 
-To hospedar o site:
+Para hospedar o site:
 
 ```console
 $ gem install aws-sdk
@@ -48,25 +48,25 @@ $ tools/upload-site
 
 ### Licença
 
-This work is copyright Mark McGranaghan and licensed under a
-[Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
+Este trabalho é de direito autoral de Mark McGranaghan 
+e está sob licença de [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
-The Go Gopher is copyright [Renée French](http://reneefrench.blogspot.com/) and licensed under a
+O Go Gopher é de direito autoral de [Renée French](http://reneefrench.blogspot.com/) e está sob licença de
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
 
 ### Traduções
 
-As traduções de colaboradores do site Go por exemplo estão disponíveis em:
+As traduções de colaboradores do site Go por Exemplo estão disponíveis em:
 
-* [Chinês] (https://gobyexample.xgwang.me/) por [xg-wang] (https://github.com/xg-wang/gobyexample)
-* [Francês] (http://le-go-par-l-exemple.keiruaprod.fr) por [keirua] (https://github.com/keirua/gobyexample)
-* [Italiano] (http://gobyexample.it) pela [Comunidade Go Italia] (https://github.com/golangit/gobyexample-it)
-* [Coreano] (https://mingrammer.com/gobyexample/) por [mingrammer] (https://github.com/mingrammer)
-* [Espanhol] (http://goconejemplos.com) pela [comunidade Go Mexico] (https://github.com/dabit/gobyexample)
+* [Chinês](https://gobyexample.xgwang.me/) por [xg-wang](https://github.com/xg-wang/gobyexample)
+* [Francês](http://le-go-par-l-exemple.keiruaprod.fr) por [keirua](https://github.com/keirua/gobyexample)
+* [Italiano](http://gobyexample.it) pela [Comunidade Go Italia] (https://github.com/golangit/gobyexample-it)
+* [Coreano](https://mingrammer.com/gobyexample/) por [mingrammer](https://github.com/mingrammer)
+* [Espanhol](http://goconejemplos.com) pela [comunidade Go Mexico](https://github.com/dabit/gobyexample)
 
 ### Agradecimentos
 
-Thanks to [Jeremy Ashkenas](https://github.com/jashkenas)
-for [Docco](http://jashkenas.github.com/docco/), which
-inspired this project.
+Agradecimentos a [Jeremy Ashkenas](https://github.com/jashkenas)
+pelo [Docco](http://jashkenas.github.com/docco/), que
+inspirou este projeto.
