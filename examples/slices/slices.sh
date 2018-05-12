@@ -1,5 +1,6 @@
-# Note que, embora os slices sejam tipos diferentes dos arrays,
-# eles são apresentados por `fmt.Println` de forma parecida.
+# Note que, embora os slices sejam tipos diferentes dos
+# arrays, eles são apresentados por `fmt.Println` de 
+# forma parecida.
 $ go run slices.go
 emp: [  ]
 set: [a b c]

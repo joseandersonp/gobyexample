@@ -25,8 +25,8 @@
         
         <tr>
           <td class="docs">
-            <p>In Go, an <em>array</em> is a numbered sequence of elements of a
-specific length.</p>
+            <p>Em Go, um <em>array</em> é uma sequência enumerada de elementos
+de um tamanho específico.</p>
 
           </td>
           <td class="code empty leading">
@@ -40,7 +40,7 @@ specific length.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/l-A8eBnwio"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/n6e-86Cj42f"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -73,10 +73,10 @@ specific length.</p>
         
         <tr>
           <td class="docs">
-            <p>Here we create an array <code>a</code> that will hold exactly
-5 <code>int</code>s. The type of elements and length are both
-part of the array&rsquo;s type. By default an array is
-zero-valued, which for <code>int</code>s means <code>0</code>s.</p>
+            <p>Aqui nós criamos um array <code>a</code> que irá conter exatamente
+5 <code>int</code>s. O tipo dos elementos e o tamanho são partes
+do tipo de array. Por padrão, um array é de valor-zero,
+que para <code>int</code>s significa <code>0</code>s.</p>
 
           </td>
           <td class="code leading">
@@ -90,9 +90,9 @@ zero-valued, which for <code>int</code>s means <code>0</code>s.</p>
         
         <tr>
           <td class="docs">
-            <p>We can set a value at an index using the
-<code>array[index] = value</code> syntax, and get a value with
-<code>array[index]</code>.</p>
+            <p>Podemos definir um valor em um índice usando a sintaxe
+<code>array[índice] = valor</code> e obter um valor com
+<code>array[índice]</code>.</p>
 
           </td>
           <td class="code leading">
@@ -107,7 +107,7 @@ zero-valued, which for <code>int</code>s means <code>0</code>s.</p>
         
         <tr>
           <td class="docs">
-            <p>The builtin <code>len</code> returns the length of an array.</p>
+            <p>A função interna <code>len</code> retorna o tamanho de um array.</p>
 
           </td>
           <td class="code leading">
@@ -120,8 +120,8 @@ zero-valued, which for <code>int</code>s means <code>0</code>s.</p>
         
         <tr>
           <td class="docs">
-            <p>Use this syntax to declare and initialize an array
-in one line.</p>
+            <p>Use esta sintaxe para declarar e inicializar um array
+com uma linha.</p>
 
           </td>
           <td class="code leading">
@@ -135,9 +135,9 @@ in one line.</p>
         
         <tr>
           <td class="docs">
-            <p>Array types are one-dimensional, but you can
-compose types to build multi-dimensional data
-structures.</p>
+            <p>Tipos de arrays são unidimensionais, mas você
+pode compor mais tipos para construir estruturas
+multidimensionais.</p>
 
           </td>
           <td class="code">
@@ -161,8 +161,8 @@ structures.</p>
         
         <tr>
           <td class="docs">
-            <p>Note that arrays appear in the form <code>[v1 v2 v3 ...]</code>
-when printed with <code>fmt.Println</code>.</p>
+            <p>Note que que os arrays aparecem no formato
+<code>[v1 v2 v3 ...]</code> quando impressos com <code>fmt.Println</code>.</p>
 
           </td>
           <td class="code leading">
@@ -181,8 +181,8 @@ when printed with <code>fmt.Println</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>You&rsquo;ll see <em>slices</em> much more often than arrays in
-typical Go. We&rsquo;ll look at slices next.</p>
+            <p>Tipicamente você verá <em>slices</em> com muito mais frequência
+do que arrays em Go. Vamos ver <em>slices</em> a seguir.</p>
 
           </td>
           <td class="code empty">

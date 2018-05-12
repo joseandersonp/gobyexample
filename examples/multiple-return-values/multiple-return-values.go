@@ -10,22 +10,22 @@ import "fmt"
 // O (int, int) nesta assinatura de função mostra que a
 // função retorna 2 `int`s.
 func vals() (int, int) {
-	return 3, 7
+    return 3, 7
 }
 
 func main() {
 
-	// Aqui usamos o retorno de dois valores diferentes
-	// da função com _atribuição múltipla_.
-	a, b := vals()
-	fmt.Println(a)
-	fmt.Println(b)
+    // Aqui usamos o retorno de dois valores diferentes
+    // da função com _atribuição múltipla_.
+    a, b := vals()
+    fmt.Println(a)
+    fmt.Println(b)
 
-	// If you only want a subset of the returned values,
-	// use the blank identifier `_`.
+    // If you only want a subset of the returned values,
+    // use the blank identifier `_`.
 
-	// Se você quiser apenas um subconjunto dos valores
-	// retornados, use o _identificador de ausência_ `_`.
-	_, c := vals()
-	fmt.Println(c)
+    // Se você quiser apenas um subconjunto dos valores
+    // retornados, use o _identificador de ausência_ `_`.
+    _, c := vals()
+    fmt.Println(c)
 }

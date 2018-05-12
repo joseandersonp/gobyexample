@@ -25,8 +25,8 @@
         
         <tr>
           <td class="docs">
-            <p>Go supports <em>constants</em> of character, string, boolean,
-and numeric values.</p>
+            <p>Go suporta <em>constantes</em> de caracteres, strings,
+booleanos e valores numéricos.</p>
 
           </td>
           <td class="code empty leading">
@@ -40,7 +40,7 @@ and numeric values.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/T5sj0eINnp"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/JAhk3Ex-XxA"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -62,7 +62,7 @@ and numeric values.</p>
         
         <tr>
           <td class="docs">
-            <p><code>const</code> declares a constant value.</p>
+            <p><code>const</code> declara um valor constante.</p>
 
           </td>
           <td class="code leading">
@@ -88,8 +88,8 @@ and numeric values.</p>
         
         <tr>
           <td class="docs">
-            <p>A <code>const</code> statement can appear anywhere a <code>var</code>
-statement can.</p>
+            <p>Uma declaração <code>const</code> pode aparecer no lugar de
+qualquer declaração <code>var</code>.</p>
 
           </td>
           <td class="code leading">
@@ -102,8 +102,8 @@ statement can.</p>
         
         <tr>
           <td class="docs">
-            <p>Constant expressions perform arithmetic with
-arbitrary precision.</p>
+            <p>Expressões constantes realizam operações aritméticas
+com precisão arbitrária.</p>
 
           </td>
           <td class="code leading">
@@ -117,8 +117,8 @@ arbitrary precision.</p>
         
         <tr>
           <td class="docs">
-            <p>A numeric constant has no type until it&rsquo;s given
-one, such as by an explicit cast.</p>
+            <p>A constante numérica não possui nenhum tipo até que
+seja atribuído a um, tal como por uma conversão explícita</p>
 
           </td>
           <td class="code leading">
@@ -131,10 +131,9 @@ one, such as by an explicit cast.</p>
         
         <tr>
           <td class="docs">
-            <p>A number can be given a type by using it in a
-context that requires one, such as a variable
-assignment or function call. For example, here
-<code>math.Sin</code> expects a <code>float64</code>.</p>
+            <p>Um número pode receber um tipo usando-o em um contexto que
+requer um, como uma atribuição de variável ou chamada de
+função. Por exemplo, aqui <code>math.Sin</code> espera um <code>float64</code>.</p>
 
           </td>
           <td class="code">

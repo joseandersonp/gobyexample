@@ -25,8 +25,8 @@
         
         <tr>
           <td class="docs">
-            <p><code>for</code> is Go&rsquo;s only looping construct. Here are
-three basic types of <code>for</code> loops.</p>
+            <p><code>for</code> é a única declaração de loop do Go.
+Aqui estão três tipos básicos de loops <code>for</code>.</p>
 
           </td>
           <td class="code empty leading">
@@ -40,7 +40,7 @@ three basic types of <code>for</code> loops.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/KNLLSX4Io_"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/5Sb9pxaP5UI"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -73,7 +73,7 @@ three basic types of <code>for</code> loops.</p>
         
         <tr>
           <td class="docs">
-            <p>The most basic type, with a single condition.</p>
+            <p>A forma mais básica, com uma única condição.</p>
 
           </td>
           <td class="code leading">
@@ -90,7 +90,7 @@ three basic types of <code>for</code> loops.</p>
         
         <tr>
           <td class="docs">
-            <p>A classic initial/condition/after <code>for</code> loop.</p>
+            <p>Uma clássico inicial/condição/pós loop <code>for</code>.</p>
 
           </td>
           <td class="code leading">
@@ -105,9 +105,8 @@ three basic types of <code>for</code> loops.</p>
         
         <tr>
           <td class="docs">
-            <p><code>for</code> without a condition will loop repeatedly
-until you <code>break</code> out of the loop or <code>return</code> from
-the enclosing function.</p>
+            <p><code>for</code> sem uma condição executará um loop infinitamente
+até encontrar um <code>break</code> ou <code>return</code> no escopo da função.</p>
 
           </td>
           <td class="code leading">
@@ -123,8 +122,8 @@ the enclosing function.</p>
         
         <tr>
           <td class="docs">
-            <p>You can also <code>continue</code> to the next iteration of
-the loop.</p>
+            <p>Você também pode usar <code>continue</code> para saltar para
+próxima iteração do loop.</p>
 
           </td>
           <td class="code">
@@ -169,9 +168,9 @@ the loop.</p>
         
         <tr>
           <td class="docs">
-            <p>We&rsquo;ll see some other <code>for</code> forms later when we look at
-<code>range</code> statements, channels, and other data
-structures.</p>
+            <p>Veremos outras formas de <code>for</code> posteriormente quando
+examinarmos instruções de range, canais e outras
+estruturas de dados.</p>
 
           </td>
           <td class="code empty">

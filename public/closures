@@ -25,10 +25,9 @@
         
         <tr>
           <td class="docs">
-            <p>Go supports <a href="http://en.wikipedia.org/wiki/Anonymous_function"><em>anonymous functions</em></a>,
-which can form <a href="http://en.wikipedia.org/wiki/Closure_(computer_science)"><em>closures</em></a>.
-Anonymous functions are useful when you want to define
-a function inline without having to name it.</p>
+            <p>Go suporta <a href="https://en.wikipedia.org/wiki/Anonymous_function"><em>funções anônimas</em></a>,
+que podem formar <a href="http://en.wikipedia.org/wiki/Closure_(computer_science)"><em>closures</em></a>.
+Funções anônimas são úteis quando você deseja definir uma função sem precisar nomeá-la.</p>
 
           </td>
           <td class="code empty leading">
@@ -42,7 +41,7 @@ a function inline without having to name it.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/zb93qzV6iN3"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/1tHsK9wVCgo"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -63,10 +62,9 @@ a function inline without having to name it.</p>
         
         <tr>
           <td class="docs">
-            <p>This function <code>intSeq</code> returns another function, which
-we define anonymously in the body of <code>intSeq</code>. The
-returned function <em>closes over</em> the variable <code>i</code> to
-form a closure.</p>
+            <p>Esta função <code>intSeq</code> retorna outra função, que definimos
+anonimamente no corpo de <code>intSeq</code>. A função retornada
+<em>envolve</em> a variável <code>i</code> para formar um closure.</p>
 
           </td>
           <td class="code leading">
@@ -97,10 +95,10 @@ form a closure.</p>
         
         <tr>
           <td class="docs">
-            <p>We call <code>intSeq</code>, assigning the result (a function)
-to <code>nextInt</code>. This function value captures its
-own <code>i</code> value, which will be updated each time
-we call <code>nextInt</code>.</p>
+            <p>Chamamos <code>intSeq</code>, atribuindo o resultado (uma função)
+à variável <code>nextInt</code>. Este valor do tipo função captura
+seu próprio valor de <code>i</code>, que será atualizado toda vez
+que chamarmos nextInt.</p>
 
           </td>
           <td class="code leading">
@@ -113,8 +111,8 @@ we call <code>nextInt</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>See the effect of the closure by calling <code>nextInt</code>
-a few times.</p>
+            <p>Veja o efeito do closure chamando <code>nextInt</code>
+algumas vezes.</p>
 
           </td>
           <td class="code leading">
@@ -129,8 +127,8 @@ a few times.</p>
         
         <tr>
           <td class="docs">
-            <p>To confirm that the state is unique to that
-particular function, create and test a new one.</p>
+            <p>Para confirmar que o estado é exclusivo para essa
+função específica, crie e teste um novo.</p>
 
           </td>
           <td class="code">
@@ -165,8 +163,8 @@ particular function, create and test a new one.</p>
         
         <tr>
           <td class="docs">
-            <p>The last feature of functions we&rsquo;ll look at for now is
-recursion.</p>
+            <p>O último recurso de funções que veremos agora
+é a recursão.</p>
 
           </td>
           <td class="code empty">

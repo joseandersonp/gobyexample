@@ -4,5 +4,5 @@ $ go run if-else.go
 9 has 1 digit
 
 # Não existe um [if ternário](https://pt.wikipedia.org/wiki/%3F:) 
-# em Go, então você precisará usar uma instrução `if` completa 
-# mesmo para condições simples.
+# em Go, então você precisará usar uma instrução `if` 
+# completa mesmo para condições simples.

@@ -25,8 +25,8 @@
         
         <tr>
           <td class="docs">
-            <p><em>Functions</em> are central in Go. We&rsquo;ll learn about
-functions with a few different examples.</p>
+            <p><em>Funções</em> são a parte central do Go. Aprenderemos
+sobre funções com alguns exemplos a seguir.</p>
 
           </td>
           <td class="code empty leading">
@@ -40,7 +40,7 @@ functions with a few different examples.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/9Nky-Dn49f"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/gxw9VnFz2qf"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -65,6 +65,18 @@ functions with a few different examples.</p>
 their sum as an <code>int</code>.</p>
 
           </td>
+          <td class="code empty leading">
+	        
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Está função que recebe dois <code>int</code>s e retorna o
+resultado da soma como um <code>int</code>.</p>
+
+          </td>
           <td class="code leading">
 	        
             <div class="highlight"><pre><span class="kd">func</span> <span class="nx">plus</span><span class="p">(</span><span class="nx">a</span> <span class="kt">int</span><span class="p">,</span> <span class="nx">b</span> <span class="kt">int</span><span class="p">)</span> <span class="kt">int</span> <span class="p">{</span>
@@ -75,10 +87,21 @@ their sum as an <code>int</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>Go requires explicit returns, i.e. it won&rsquo;t
-automatically return the value of the last
-expression.</p>
+            <p>retornará automaticamente o valor da última
+expressão.</p>
 
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="c1">//Go requer retornos explícitos, ou seja, não</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
           </td>
           <td class="code leading">
 	        
@@ -91,10 +114,9 @@ expression.</p>
         
         <tr>
           <td class="docs">
-            <p>When you have multiple consecutive parameters of
-the same type, you may omit the type name for the
-like-typed parameters up to the final parameter that
-declares the type.</p>
+            <p>Quando você passa vários parâmetros consecutivos do
+mesmo tipo, você pode omitir o tipo do nomes e
+declarar o tipo no ultimo parâmetro.</p>
 
           </td>
           <td class="code leading">
@@ -121,8 +143,8 @@ declares the type.</p>
         
         <tr>
           <td class="docs">
-            <p>Call a function just as you&rsquo;d expect, with
-<code>name(args)</code>.</p>
+            <p>Chame uma função como esperado, com
+<code>nome(argumentos)</code>.</p>
 
           </td>
           <td class="code leading">
@@ -168,8 +190,9 @@ declares the type.</p>
         
         <tr>
           <td class="docs">
-            <p>There are several other features to Go functions. One is
-multiple return values, which we&rsquo;ll look at next.</p>
+            <p>Existem muitos recursos para funções em Go. Uma
+delas é o retorno de vários valores, os quais
+veremos a seguir.</p>
 
           </td>
           <td class="code empty">

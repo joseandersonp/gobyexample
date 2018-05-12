@@ -1,26 +1,27 @@
-## Go by Example
+## GO por Exemplo
 
-Content and build toolchain for [Go by Example](https://gobyexample.com),
-a site that teaches Go via annotated example programs.
-
-
-### Overview
-
-The Go by Example site is built by extracting code and
-comments from source files in `examples` and rendering
-them via the `templates` into a static `public`
-directory. The programs implementing this build process
-are in `tools`, along with some vendor'd dependencies
-in `vendor`.
-
-The built `public` directory can be served by any
-static content system. The production site uses S3 and
-CloudFront, for example.
+Conteúdo e ferramentas para construção do [Go por Exemplo](https://goporexemplo.com),
+um site que ensina Go via programas de exemplo comentados.
 
 
-### Building
+### Visão Geral
 
-To build the site you'll need Go and Python installed. Run:
+Tradução do site Go por Exemplo, construído pela extração 
+do código e comentários de arquivos fonte em `examples` e 
+renderizando-os via `templates` para dentro do diretório 
+estático `public`. Os programas que implementam este 
+processo de construção estão em `tools`, junto com algumas 
+dependências de fornecedores em `vendor`.
+
+O diretório `public` pode ser hospedado por qualquer 
+sistema de conteúdo estático. A produção do site 
+usa S3 e CloudFront, por exemplo.
+
+
+### Construindo
+
+Para construir o site, você precisará instalar o Go 
+e o Python. Execute:
 
 ```console
 $ go get github.com/russross/blackfriday
@@ -28,15 +29,15 @@ $ tools/build
 $ open public/index.html
 ```
 
-To build continuously in a loop:
+Para construir continuamente em um loop:
 
 ```console
 $ tools/build-loop
 ```
 
-### Publishing
+### Publicando
 
-To upload the site:
+To hospedar o site:
 
 ```console
 $ gem install aws-sdk
@@ -45,7 +46,7 @@ $ export AWS_SECRET_ACCESS_KEY=...
 $ tools/upload-site
 ```
 
-### License
+### Licença
 
 This work is copyright Mark McGranaghan and licensed under a
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
@@ -54,17 +55,17 @@ The Go Gopher is copyright [Renée French](http://reneefrench.blogspot.com/) and
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
 
-### Translations
+### Traduções
 
-Contributor translations of the Go by Example site are available in:
+As traduções de colaboradores do site Go por exemplo estão disponíveis em:
 
-* [Chinese](https://gobyexample.xgwang.me/) by [xg-wang](https://github.com/xg-wang/gobyexample)
-* [French](http://le-go-par-l-exemple.keiruaprod.fr) by [keirua](https://github.com/keirua/gobyexample)
-* [Italian](http://gobyexample.it) by the [Go Italian community](https://github.com/golangit/gobyexample-it)
-* [Korean](https://mingrammer.com/gobyexample/) by [mingrammer](https://github.com/mingrammer)
-* [Spanish](http://goconejemplos.com) by the [Go Mexico community](https://github.com/dabit/gobyexample)
+* [Chinês] (https://gobyexample.xgwang.me/) por [xg-wang] (https://github.com/xg-wang/gobyexample)
+* [Francês] (http://le-go-par-l-exemple.keiruaprod.fr) por [keirua] (https://github.com/keirua/gobyexample)
+* [Italiano] (http://gobyexample.it) pela [Comunidade Go Italia] (https://github.com/golangit/gobyexample-it)
+* [Coreano] (https://mingrammer.com/gobyexample/) por [mingrammer] (https://github.com/mingrammer)
+* [Espanhol] (http://goconejemplos.com) pela [comunidade Go Mexico] (https://github.com/dabit/gobyexample)
 
-### Thanks
+### Agradecimentos
 
 Thanks to [Jeremy Ashkenas](https://github.com/jashkenas)
 for [Docco](http://jashkenas.github.com/docco/), which

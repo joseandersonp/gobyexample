@@ -8,15 +8,15 @@ import "fmt"
 
 func main() {
 
-	// Strings, que podem ser unidas com `+`.
-	fmt.Println("go" + "lang")
+    // Strings, que podem ser unidas com `+`.
+    fmt.Println("go" + "lang")
 
-	// Inteiros e pontos flutuantes.
-	fmt.Println("1+1 =", 1+1)
-	fmt.Println("7.0/3.0 =", 7.0/3.0)
+    // Inteiros e pontos flutuantes.
+    fmt.Println("1+1 =", 1+1)
+    fmt.Println("7.0/3.0 =", 7.0/3.0)
 
-	// Booleanos, com operadores booleanos como esperado.
-	fmt.Println(true && false)
-	fmt.Println(true || false)
-	fmt.Println(!true)
+    // Booleanos, com operadores booleanos como esperado.
+    fmt.Println(true && false)
+    fmt.Println(true || false)
+    fmt.Println(!true)
 }
