@@ -1,7 +1,7 @@
-## GO por Exemplo
+## Go por Exemplo
 
-Conteúdo e ferramentas para construção do [Go por Exemplo](https://goporexemplo.com),
-um site que ensina Go via programas de exemplo comentados.
+Conteúdo e ferramentas para construção do [Go por Exemplo](https://goporexemplo.br),
+um site que ensina Go via programas de exemplos comentados.
 
 
 ### Visão Geral
@@ -48,10 +48,13 @@ $ tools/upload-site
 
 ### Licença
 
-Este trabalho é de direito autoral de Mark McGranaghan 
+Os direitos dessa tradução pertencem a José Anderson Pereira
 e está sob licença de [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
-O Go Gopher é de direito autoral de [Renée French](http://reneefrench.blogspot.com/) e está sob licença de
+Os direitos da obra original pertencem a Mark McGranaghan 
+e está sob licença de [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
+
+Os direitos de Go Gopher pertencem a [Renée French](http://reneefrench.blogspot.com/) e está sob licença de
 [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/).
 
 
@@ -61,7 +64,7 @@ As traduções de colaboradores do site Go por Exemplo estão disponíveis em:
 
 * [Chinês](https://gobyexample.xgwang.me/) por [xg-wang](https://github.com/xg-wang/gobyexample)
 * [Francês](http://le-go-par-l-exemple.keiruaprod.fr) por [keirua](https://github.com/keirua/gobyexample)
-* [Italiano](http://gobyexample.it) pela [Comunidade Go Italia] (https://github.com/golangit/gobyexample-it)
+* [Italiano](http://gobyexample.it) pela [Comunidade Go Italia](https://github.com/golangit/gobyexample-it)
 * [Coreano](https://mingrammer.com/gobyexample/) por [mingrammer](https://github.com/mingrammer)
 * [Espanhol](http://goconejemplos.com) pela [comunidade Go Mexico](https://github.com/dabit/gobyexample)
 
