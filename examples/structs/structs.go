@@ -1,41 +1,43 @@
-// Go's _structs_ are typed collections of fields.
-// They're useful for grouping data together to form
-// records.
+// Os _structs_ do Go são coleções de campos com tipos
+// específicos. Eles são úteis para agrupar dado e
+// formar registros.
 
 package main
 
 import "fmt"
 
-// This `person` struct type has `name` and `age` fields.
+// Esse struct do tipo `person` possui os camos `name`
+// e `age`
 type person struct {
-    name string
-    age  int
+	name string
+	age  int
 }
 
 func main() {
 
-    // This syntax creates a new struct.
-    fmt.Println(person{"Bob", 20})
+	// Essa sintaxe cria um novo struct.
+	fmt.Println(person{"Bob", 20})
 
-    // You can name the fields when initializing a struct.
-    fmt.Println(person{name: "Alice", age: 30})
+	// Você pode nomear os campos ao inicializar um struct.
+	fmt.Println(person{name: "Alice", age: 30})
 
-    // Omitted fields will be zero-valued.
-    fmt.Println(person{name: "Fred"})
+	// Os campos omitidos terão valor-zero.
+	fmt.Println(person{name: "Fred"})
 
-    // An `&` prefix yields a pointer to the struct.
-    fmt.Println(&person{name: "Ann", age: 40})
+	// Um prefixo `&` produz um ponteiro para o struct.
+	fmt.Println(&person{name: "Ann", age: 40})
 
-    // Access struct fields with a dot.
-    s := person{name: "Sean", age: 50}
-    fmt.Println(s.name)
+	// Acesse os campos do struct com um ponto.
+	s := person{name: "Sean", age: 50}
+	fmt.Println(s.name)
 
-    // You can also use dots with struct pointers - the
-    // pointers are automatically dereferenced.
-    sp := &s
-    fmt.Println(sp.age)
+	// Você também pode usar pontos com os ponteiros
+	// de structs - os ponteiros são automaticamente
+	// desreferenciados.
+	sp := &s
+	fmt.Println(sp.age)
 
-    // Structs are mutable.
-    sp.age = 51
-    fmt.Println(sp.age)
+	// Structs são mutáveis.
+	sp.age = 51
+	fmt.Println(sp.age)
 }

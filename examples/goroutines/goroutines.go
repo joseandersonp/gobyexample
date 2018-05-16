@@ -1,37 +1,38 @@
-// A _goroutine_ is a lightweight thread of execution.
+// A _goroutine_ é a execução de uma thread de
+// processamento leve.
 
 package main
 
 import "fmt"
 
 func f(from string) {
-    for i := 0; i < 3; i++ {
-        fmt.Println(from, ":", i)
-    }
+	for i := 0; i < 3; i++ {
+		fmt.Println(from, ":", i)
+	}
 }
 
 func main() {
 
-    // Suppose we have a function call `f(s)`. Here's how
-    // we'd call that in the usual way, running it
-    // synchronously.
-    f("direct")
+	// Suponha que temos uma chamada da função `f(s)`. Veja
+	// como chamaríamos da maneira normal, executando a de
+	// forma síncrona.
+	f("direct")
 
-    // To invoke this function in a goroutine, use
-    // `go f(s)`. This new goroutine will execute
-    // concurrently with the calling one.
-    go f("goroutine")
+	// Para chamar a função em uma goroutine, usamos
+	// `go f(s)`. Esta nova goroutine será executada
+	// simultaneamente com quem está chamando.
+	go f("goroutine")
 
-    // You can also start a goroutine for an anonymous
-    // function call.
-    go func(msg string) {
-        fmt.Println(msg)
-    }("going")
+	// Você também pode iniciar uma goroutine para uma
+	// chamada de função anônima.
+	go func(msg string) {
+		fmt.Println(msg)
+	}("going")
 
-    // Our two function calls are running asynchronously in
-    // separate goroutines now, so execution falls through
-    // to here. This `Scanln` requires we press a key
-    // before the program exits.
-    fmt.Scanln()
-    fmt.Println("done")
+	// Nossas chamadas de função estão sendo executadas de
+	// forma assíncrona em duas goroutines separadas, então
+	// a execução avança até aqui. Este `Scanln` requer
+	// que pressionemos uma tecla antes do programa sair.
+	fmt.Scanln()
+	fmt.Println("done")
 }
