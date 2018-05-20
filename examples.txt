@@ -1,34 +1,34 @@
-Hello World
-Values
-Variables
-Constants
+Olá mundo
+Valores
+Variáveis
+Constantes
 For
 If/Else
 Switch
 Arrays
 Slices
-Maps
+Mapas
 Range
-Functions
-Multiple Return Values
-Variadic Functions
+Funções
+Retorno múltiplo de valores
+Funções variádicas
 Closures
-Recursion
-Pointers
+Recursão
+Ponteiros
 Structs
-Methods
+Métodos
 Interfaces
-Errors
-Goroutines
-Channels
-Channel Buffering
-Channel Synchronization
-Channel Directions
+Erros
+Gorrotinas
+Canais
+Canais com buffer
+Sincronização de canais
+Direcionamento de canais
 Select
 Timeouts
-Non-Blocking Channel Operations
-Closing Channels
-Range over Channels
+Operações em canais não bloqueados
+Fechamento de Canais
+Range sobre Canais
 Timers
 Tickers
 Worker Pools

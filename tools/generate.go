@@ -3,7 +3,6 @@ package main
 import (
 	"crypto/sha1"
 	"fmt"
-	"github.com/russross/blackfriday"
 	"io/ioutil"
 	"net/http"
 	"os"
@@ -12,6 +11,12 @@ import (
 	"regexp"
 	"strings"
 	"text/template"
+	"unicode"
+
+	"github.com/russross/blackfriday"
+	"golang.org/x/text/runes"
+	"golang.org/x/text/transform"
+	"golang.org/x/text/unicode/norm"
 )
 
 var cacheDir = "/tmp/gobyexample-cache"
@@ -222,6 +227,7 @@ func parseExamples() []*Example {
 		if (exampleName != "") && !strings.HasPrefix(exampleName, "#") {
 			example := Example{Name: exampleName}
 			exampleID := strings.ToLower(exampleName)
+			exampleID = ReplaceAccents(exampleID)
 			exampleID = strings.Replace(exampleID, " ", "-", -1)
 			exampleID = strings.Replace(exampleID, "/", "-", -1)
 			exampleID = strings.Replace(exampleID, "'", "", -1)
@@ -274,6 +280,12 @@ func renderExamples(examples []*Example) {
 		check(err)
 		exampleTmpl.Execute(exampleF, example)
 	}
+}
+
+func ReplaceAccents(str string) string {
+	t := transform.Chain(norm.NFD, runes.Remove(runes.In(unicode.Mn)), norm.NFC)
+	s, _, _ := transform.String(t, str)
+	return s
 }
 
 func main() {

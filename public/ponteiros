@@ -23,6 +23,181 @@
     <div class="example" id="ponteiros">
       <h2><a href="./">Go por Exemplo</a>: Ponteiros</h2>
       
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p>Go suporta <a href="http://en.wikipedia.org/wiki/Pointer_(computer_programming)"><em>ponteiros</em></a>,
+permitindo que você passe referências a valores e
+registros dentro do seu programa.</p>
+
+          </td>
+          <td class="code empty leading">
+	        
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        <a href="http://play.golang.org/p/UsNaReUVR5o"><img title="Run code" src="play.png" class="run" /></a>
+            <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Vamos ver como os ponteiros funcionam em contraste com os
+valores diretos usando duas funções: <code>zeroval</code> e <code>zeroptr</code>.
+<code>zeroval</code> recebe um parâmetro <code>int</code>, então os argumentos
+serão passados por valor. O <code>zeroval</code> receberá uma cópia
+do <code>ival</code> diferente da função onde é chamado.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="kd">func</span> <span class="nx">zeroval</span><span class="p">(</span><span class="nx">ival</span> <span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">ival</span> <span class="p">=</span> <span class="mi">0</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p><code>zeroptr</code> in contrast has an <code>*int</code> parameter, meaning
+that it takes an <code>int</code> pointer. The <code>*iptr</code> code in the
+function body then <em>dereferences</em> the pointer from its
+memory address to the current value at that address.
+Assigning a value to a dereferenced pointer changes the
+value at the referenced address.</p>
+
+          </td>
+          <td class="code empty leading">
+	        
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>O <code>zeroptr</code> recebe um parâmetro <code>*int</code>, o que significa
+que ele recebe um ponteiro de <code>int</code>. O código <code>*iptr</code> no corpo
+da função <em>desreferencia</em> o ponteiro de seu endereço de
+memória para o valor atual desse endereço. Se atribuirmos
+um valor a um ponteiro não referenciado, o valor que está
+sendo armazenado nesse endereço de memória é alterado.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="kd">func</span> <span class="nx">zeroptr</span><span class="p">(</span><span class="nx">iptr</span> <span class="o">*</span><span class="kt">int</span><span class="p">)</span> <span class="p">{</span>
+    <span class="o">*</span><span class="nx">iptr</span> <span class="p">=</span> <span class="mi">0</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nx">i</span> <span class="o">:=</span> <span class="mi">1</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;initial:&quot;</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">zeroval</span><span class="p">(</span><span class="nx">i</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;zeroval:&quot;</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>A sintaxe <code>&amp;i</code> fornece o endereço de memória de <code>i</code>,
+isto é, um ponteiro para <code>i</code>.</p>
+
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>    <span class="nx">zeroptr</span><span class="p">(</span><span class="o">&amp;</span><span class="nx">i</span><span class="p">)</span>
+    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;zeroptr:&quot;</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Os ponteiros também podem ser impressos</p>
+
+          </td>
+          <td class="code">
+	        
+            <div class="highlight"><pre>    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="s">&quot;pointer:&quot;</span><span class="p">,</span> <span class="o">&amp;</span><span class="nx">i</span><span class="p">)</span>
+<span class="p">}</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
+      <table>
+        
+        <tr>
+          <td class="docs">
+            <p><code>zeroval</code> não altera o <code>i</code> em <code>main</code>, mas
+<code>zeroptr</code> sim porque tem uma referência
+do endereço de memória dessa variável.</p>
+
+          </td>
+          <td class="code">
+	        
+            <div class="highlight"><pre><span class="gp">$</span> go run ponteiros.go
+<span class="go">initial: 1</span>
+<span class="go">zeroval: 1</span>
+<span class="go">zeroptr: 0</span>
+<span class="go">pointer: 0x42131100</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+      </table>
+      
       
       <p class="next">
         Próximo exemplo: <a href="structs">Structs</a>.
