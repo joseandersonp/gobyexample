@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Channel Directions</title>
+    <title>Go por Exemplo: Channel Directions</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,32 +18,23 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="channel-directions">
-      <h2><a href="./">Go by Example</a>: Channel Directions</h2>
+      <h2><a href="./">Go por Exemplo</a>: Channel Directions</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>When using channels as function parameters, you can
-specify if a channel is meant to only send or receive
-values. This specificity increases the type-safety of
-the program.</p>
+            <p>Ao usar canais como parâmetros de função, você pode
+especificar se um canal serve apenas para enviar ou
+receber valores. Esta particularidade aumenta a
+segurança dos tipos do programa.</p>
 
           </td>
-          <td class="code empty leading">
-	        
-            
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            
-          </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/P9Fujfpa1f"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/IAiMd7yAvdC"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -63,9 +55,9 @@ the program.</p>
         
         <tr>
           <td class="docs">
-            <p>This <code>ping</code> function only accepts a channel for sending
-values. It would be a compile-time error to try to
-receive on this channel.</p>
+            <p>A função <code>ping</code> só aceita um canal para enviar valores.
+Isso causaria um erro de compilação ao tentar receber por
+este canal.</p>
 
           </td>
           <td class="code leading">
@@ -80,8 +72,8 @@ receive on this channel.</p>
         
         <tr>
           <td class="docs">
-            <p>The <code>pong</code> function accepts one channel for receives
-(<code>pings</code>) and a second for sends (<code>pongs</code>).</p>
+            <p>A função <code>pong</code> aceita um canal para receber (<code>pings</code>)
+e um segundo para enviar (<code>pongs</code>).</p>
 
           </td>
           <td class="code leading">
@@ -134,11 +126,11 @@ receive on this channel.</p>
       
       
       <p class="next">
-        Next example: <a href="select">Select</a>.
+        Próximo exemplo: <a href="select">Select</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/channel-directions">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/channel-directions">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

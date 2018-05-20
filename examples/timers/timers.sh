@@ -1,6 +1,6 @@
-// The first timer will expire ~2s after we start the
-// program, but the second should be stopped before it has
-// a chance to expire.
+# O primeiro timer irá expirar ~2s depois de iniciarmos
+# o programa, mas o segundo deve ser cancelado antes que
+# ele tenha a chance de expirar.
 $ go run timers.go
 Timer 1 expired
 Timer 2 stopped

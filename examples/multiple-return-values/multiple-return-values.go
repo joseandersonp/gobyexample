@@ -21,9 +21,6 @@ func main() {
     fmt.Println(a)
     fmt.Println(b)
 
-    // If you only want a subset of the returned values,
-    // use the blank identifier `_`.
-
     // Se você quiser apenas um subconjunto dos valores
     // retornados, use o _identificador de ausência_ `_`.
     _, c := vals()

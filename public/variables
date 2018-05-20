@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Variables</title>
+    <title>Go por Exemplo: Variables</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,164 +18,18 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="variables">
-      <h2><a href="./">Go by Example</a>: Variables</h2>
-      
-      <table>
-        
-        <tr>
-          <td class="docs">
-            <p>Em Go, <em>variáveis</em> são declaradas explicitamente e usadas
-pelo compilador como, por exemplo, checar o tipagem-correta
-das chamadas das funções.</p>
-
-          </td>
-          <td class="code empty leading">
-	        
-            
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            
-          </td>
-          <td class="code leading">
-	        <a href="http://play.golang.org/p/8PCS6bqs6bV"><img title="Run code" src="play.png" class="run" /></a>
-            <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            
-          </td>
-          <td class="code leading">
-	        
-            <div class="highlight"><pre><span class="kn">import</span> <span class="s">&quot;fmt&quot;</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            
-          </td>
-          <td class="code leading">
-	        
-            <div class="highlight"><pre><span class="kd">func</span> <span class="nx">main</span><span class="p">()</span> <span class="p">{</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            <p><code>var</code> declara 1 ou mais variáveis.</p>
-
-          </td>
-          <td class="code leading">
-	        
-            <div class="highlight"><pre>    <span class="kd">var</span> <span class="nx">a</span> <span class="p">=</span> <span class="s">&quot;initial&quot;</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            <p>Você pode declarar muitas variáveis de uma só vez.</p>
-
-          </td>
-          <td class="code leading">
-	        
-            <div class="highlight"><pre>    <span class="kd">var</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">c</span> <span class="kt">int</span> <span class="p">=</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">b</span><span class="p">,</span> <span class="nx">c</span><span class="p">)</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            <p>Go irá inferir o tipo de variáveis inicializadas.</p>
-
-          </td>
-          <td class="code leading">
-	        
-            <div class="highlight"><pre>    <span class="kd">var</span> <span class="nx">d</span> <span class="p">=</span> <span class="kc">true</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">d</span><span class="p">)</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            <p>Variáveis declaradas sem uma inicialização correspondente são
-de <em>valor-zero</em>. Por exemplo, o valor zero para um <code>int</code> é<code>0</code>.</p>
-
-          </td>
-          <td class="code leading">
-	        
-            <div class="highlight"><pre>    <span class="kd">var</span> <span class="nx">e</span> <span class="kt">int</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            <p>A sintaxe <code>:=</code> é uma forma abreviada de declarar e inicializar uma
-variável. Por exemplo, para <code>var f string = &quot;short&quot;</code> como neste caso.</p>
-
-          </td>
-          <td class="code">
-	        
-            <div class="highlight"><pre>    <span class="nx">f</span> <span class="o">:=</span> <span class="s">&quot;short&quot;</span>
-    <span class="nx">fmt</span><span class="p">.</span><span class="nx">Println</span><span class="p">(</span><span class="nx">f</span><span class="p">)</span>
-<span class="p">}</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-      </table>
-      
-      <table>
-        
-        <tr>
-          <td class="docs">
-            
-          </td>
-          <td class="code">
-	        
-            <div class="highlight"><pre><span class="gp">$</span> go run variables.go
-<span class="go">initial</span>
-<span class="go">1 2</span>
-<span class="go">true</span>
-<span class="go">0</span>
-<span class="go">short</span>
-</pre></div>
-
-          </td>
-        </tr>
-        
-      </table>
+      <h2><a href="./">Go por Exemplo</a>: Variables</h2>
       
       
       <p class="next">
-        Next example: <a href="constants">Constants</a>.
+        Próximo exemplo: <a href="constants">Constants</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/variables">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/variables">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Atomic Counters</title>
+    <title>Go por Exemplo: Atomic Counters</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="atomic-counters">
-      <h2><a href="./">Go by Example</a>: Atomic Counters</h2>
+      <h2><a href="./">Go por Exemplo</a>: Atomic Counters</h2>
       
       <table>
         
@@ -208,11 +210,11 @@ state.</p>
       
       
       <p class="next">
-        Next example: <a href="mutexes">Mutexes</a>.
+        Próximo exemplo: <a href="mutexes">Mutexes</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/atomic-counters">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/atomic-counters">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

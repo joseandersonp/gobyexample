@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: JSON</title>
+    <title>Go por Exemplo: JSON</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="json">
-      <h2><a href="./">Go by Example</a>: JSON</h2>
+      <h2><a href="./">Go por Exemplo</a>: JSON</h2>
       
       <table>
         
@@ -390,11 +392,11 @@ for more.</p>
       
       
       <p class="next">
-        Next example: <a href="time">Time</a>.
+        Próximo exemplo: <a href="time">Time</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/json">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/json">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

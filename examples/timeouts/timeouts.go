@@ -1,8 +1,8 @@
-// _Timeouts_ are important for programs that connect to
-// external resources or that otherwise need to bound
-// execution time. Implementing timeouts in Go is easy and
-// elegant thanks to channels and `select`.
-
+// _Timeouts_ são importantes para programas que se
+// conectam a recursos externos ou que de outra
+// forma precisam limitar o tempo de execução.
+// A implementação de timeouts no Go é fácil e
+// elegante graças aos canais e `select`.
 package main
 
 import "time"
@@ -10,21 +10,21 @@ import "fmt"
 
 func main() {
 
-    // For our example, suppose we're executing an external
-    // call that returns its result on a channel `c1`
-    // after 2s.
+    // Para o nosso exemplo, suponha que estamos
+    // executando uma chamada externa que retorna seu
+    // resultado em um canal `c1` depois de 2s.
     c1 := make(chan string, 1)
     go func() {
         time.Sleep(2 * time.Second)
         c1 <- "result 1"
     }()
 
-    // Here's the `select` implementing a timeout.
-    // `res := <-c1` awaits the result and `<-Time.After`
-    // awaits a value to be sent after the timeout of
-    // 1s. Since `select` proceeds with the first
-    // receive that's ready, we'll take the timeout case
-    // if the operation takes more than the allowed 1s.
+    // Aqui temos o `select` implementando um timeout.
+    //`res: = <-c1` aguarda o resultado e <-Time.Após aguarda
+    // o valor que será enviado após o time out de 1s.
+    // Conforme o `select` prossegue com a primeira mensagem
+    // recebida, consideraremos o case de timeout se a operação
+    // demorar mais do que o tempo permitido (1s).
     select {
     case res := <-c1:
         fmt.Println(res)
@@ -32,8 +32,8 @@ func main() {
         fmt.Println("timeout 1")
     }
 
-    // If we allow a longer timeout of 3s, then the receive
-    // from `c2` will succeed and we'll print the result.
+    // Se permitirmos um timeout de 3s, o recebimento de `c2`
+    // será bem-sucedido e nós imprimiremos o resultado.
     c2 := make(chan string, 1)
     go func() {
         time.Sleep(2 * time.Second)

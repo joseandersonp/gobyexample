@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Line Filters</title>
+    <title>Go por Exemplo: Line Filters</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="line-filters">
-      <h2><a href="./">Go by Example</a>: Line Filters</h2>
+      <h2><a href="./">Go por Exemplo</a>: Line Filters</h2>
       
       <table>
         
@@ -193,11 +195,11 @@ lowercase lines.</p>
       
       
       <p class="next">
-        Next example: <a href="command-line-arguments">Command-Line Arguments</a>.
+        Próximo exemplo: <a href="command-line-arguments">Command-Line Arguments</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/line-filters">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/line-filters">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

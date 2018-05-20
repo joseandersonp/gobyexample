@@ -1,32 +1,33 @@
-// We can use channels to synchronize execution
-// across goroutines. Here's an example of using a
-// blocking receive to wait for a goroutine to finish.
+// Podemos usar canais para sincronizar a execução entre
+// gorrotinas. Aqui está um exemplo de como bloquear
+// o recebimento para aguardar o termino de uma gorrotina.
 
 package main
 
 import "fmt"
 import "time"
 
-// This is the function we'll run in a goroutine. The
-// `done` channel will be used to notify another
-// goroutine that this function's work is done.
+// Esta é a função que vamos executar em uma gorroutina.
+// O canal `done` será usado para notificar outra gorrotina
+// que o trabalho desta função está concluído.
 func worker(done chan bool) {
     fmt.Print("working...")
     time.Sleep(time.Second)
     fmt.Println("done")
 
-    // Send a value to notify that we're done.
+    // Envie um valor para notificar o término.
     done <- true
 }
 
 func main() {
 
-    // Start a worker goroutine, giving it the channel to
-    // notify on.
+    // Inicia uma gorrotina `worker` passando para ela
+    // o canal para notificação.
     done := make(chan bool, 1)
     go worker(done)
 
-    // Block until we receive a notification from the
-    // worker on the channel.
+    // Aguarda o recebimento da notificação do canal em
+    // worker.
     <-done
+
 }

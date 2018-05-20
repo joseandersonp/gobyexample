@@ -12,7 +12,7 @@ import "fmt"
 // serão passados por valor. O `zeroval` receberá uma cópia
 // do `ival` diferente da função onde é chamado.
 func zeroval(ival int) {
-	ival = 0
+    ival = 0
 }
 
 // `zeroptr` in contrast has an `*int` parameter, meaning
@@ -29,21 +29,21 @@ func zeroval(ival int) {
 // um valor a um ponteiro não referenciado, o valor que está
 // sendo armazenado nesse endereço de memória é alterado.
 func zeroptr(iptr *int) {
-	*iptr = 0
+    *iptr = 0
 }
 
 func main() {
-	i := 1
-	fmt.Println("initial:", i)
+    i := 1
+    fmt.Println("initial:", i)
 
-	zeroval(i)
-	fmt.Println("zeroval:", i)
+    zeroval(i)
+    fmt.Println("zeroval:", i)
 
-	// A sintaxe `&i` fornece o endereço de memória de `i`,
-	// isto é, um ponteiro para `i`.
-	zeroptr(&i)
-	fmt.Println("zeroptr:", i)
+    // A sintaxe `&i` fornece o endereço de memória de `i`,
+    // isto é, um ponteiro para `i`.
+    zeroptr(&i)
+    fmt.Println("zeroptr:", i)
 
-	// Os ponteiros também podem ser impressos
-	fmt.Println("pointer:", &i)
+    // Os ponteiros também podem ser impressos
+    fmt.Println("pointer:", &i)
 }

@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Pointers</title>
+    <title>Go por Exemplo: Pointers</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,17 +18,18 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="pointers">
-      <h2><a href="./">Go by Example</a>: Pointers</h2>
+      <h2><a href="./">Go por Exemplo</a>: Pointers</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>Go supports <em><a href="http://en.wikipedia.org/wiki/Pointer_(computer_programming)">pointers</a></em>,
-allowing you to pass references to values and records
-within your program.</p>
+            <p>Go suporta <a href="http://en.wikipedia.org/wiki/Pointer_(computer_programming)"><em>ponteiros</em></a>,
+permitindo que você passe referências a valores e
+registros dentro do seu programa.</p>
 
           </td>
           <td class="code empty leading">
@@ -41,7 +43,7 @@ within your program.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/KdE4TBbUL2"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/UsNaReUVR5o"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -62,11 +64,11 @@ within your program.</p>
         
         <tr>
           <td class="docs">
-            <p>We&rsquo;ll show how pointers work in contrast to values with
-2 functions: <code>zeroval</code> and <code>zeroptr</code>. <code>zeroval</code> has an
-<code>int</code> parameter, so arguments will be passed to it by
-value. <code>zeroval</code> will get a copy of <code>ival</code> distinct
-from the one in the calling function.</p>
+            <p>Vamos ver como os ponteiros funcionam em contraste com os
+valores diretos usando duas funções: <code>zeroval</code> e <code>zeroptr</code>.
+<code>zeroval</code> recebe um parâmetro <code>int</code>, então os argumentos
+serão passados por valor. O <code>zeroval</code> receberá uma cópia
+do <code>ival</code> diferente da função onde é chamado.</p>
 
           </td>
           <td class="code leading">
@@ -87,6 +89,22 @@ function body then <em>dereferences</em> the pointer from its
 memory address to the current value at that address.
 Assigning a value to a dereferenced pointer changes the
 value at the referenced address.</p>
+
+          </td>
+          <td class="code empty leading">
+	        
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>O <code>zeroptr</code> recebe um parâmetro <code>*int</code>, o que significa
+que ele recebe um ponteiro de <code>int</code>. O código <code>*iptr</code> no corpo
+da função <em>desreferencia</em> o ponteiro de seu endereço de
+memória para o valor atual desse endereço. Se atribuirmos
+um valor a um ponteiro não referenciado, o valor que está
+sendo armazenado nesse endereço de memória é alterado.</p>
 
           </td>
           <td class="code leading">
@@ -128,8 +146,8 @@ value at the referenced address.</p>
         
         <tr>
           <td class="docs">
-            <p>The <code>&amp;i</code> syntax gives the memory address of <code>i</code>,
-i.e. a pointer to <code>i</code>.</p>
+            <p>A sintaxe <code>&amp;i</code> fornece o endereço de memória de <code>i</code>,
+isto é, um ponteiro para <code>i</code>.</p>
 
           </td>
           <td class="code leading">
@@ -143,7 +161,7 @@ i.e. a pointer to <code>i</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>Pointers can be printed too.</p>
+            <p>Os ponteiros também podem ser impressos</p>
 
           </td>
           <td class="code">
@@ -161,9 +179,9 @@ i.e. a pointer to <code>i</code>.</p>
         
         <tr>
           <td class="docs">
-            <p><code>zeroval</code> doesn&rsquo;t change the <code>i</code> in <code>main</code>, but
-<code>zeroptr</code> does because it has a reference to
-the memory address for that variable.</p>
+            <p><code>zeroval</code> não altera o <code>i</code> em <code>main</code>, mas
+<code>zeroptr</code> sim porque tem uma referência
+do endereço de memória dessa variável.</p>
 
           </td>
           <td class="code">
@@ -182,11 +200,11 @@ the memory address for that variable.</p>
       
       
       <p class="next">
-        Next example: <a href="structs">Structs</a>.
+        Próximo exemplo: <a href="structs">Structs</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/pointers">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/pointers">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

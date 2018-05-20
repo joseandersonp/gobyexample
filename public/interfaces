@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Interfaces</title>
+    <title>Go por Exemplo: Interfaces</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,16 +18,17 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="interfaces">
-      <h2><a href="./">Go by Example</a>: Interfaces</h2>
+      <h2><a href="./">Go por Exemplo</a>: Interfaces</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p><em>Interfaces</em> are named collections of method
-signatures.</p>
+            <p><em>Interfaces</em> são coleções nomeadas de assinaturas
+de métodos.</p>
 
           </td>
           <td class="code empty leading">
@@ -40,7 +42,7 @@ signatures.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/313UebA3rD"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/p37Cq46G1FP"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -62,7 +64,8 @@ signatures.</p>
         
         <tr>
           <td class="docs">
-            <p>Here&rsquo;s a basic interface for geometric shapes.</p>
+            <p>Aqui está uma interface básica para formas
+geométricas.</p>
 
           </td>
           <td class="code leading">
@@ -78,8 +81,8 @@ signatures.</p>
         
         <tr>
           <td class="docs">
-            <p>For our example we&rsquo;ll implement this interface on
-<code>rect</code> and <code>circle</code> types.</p>
+            <p>Para o nosso exemplo, vamos implementar essa interface
+nos tipos <code>rect</code> e<code>circle</code>.</p>
 
           </td>
           <td class="code leading">
@@ -102,6 +105,19 @@ implement all the methods in the interface. Here we
 implement <code>geometry</code> on <code>rect</code>s.</p>
 
           </td>
+          <td class="code empty leading">
+	        
+            
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            <p>Para implementar uma interface no Go, só precisamos
+implementar todos os métodos da interface. Aqui nós
+implementamos <code>geometry</code> em <code>rect</code>s.</p>
+
+          </td>
           <td class="code leading">
 	        
             <div class="highlight"><pre><span class="kd">func</span> <span class="p">(</span><span class="nx">r</span> <span class="nx">rect</span><span class="p">)</span> <span class="nx">area</span><span class="p">()</span> <span class="kt">float64</span> <span class="p">{</span>
@@ -117,7 +133,7 @@ implement <code>geometry</code> on <code>rect</code>s.</p>
         
         <tr>
           <td class="docs">
-            <p>The implementation for <code>circle</code>s.</p>
+            <p>A implementação para os <code>circle</code>s.</p>
 
           </td>
           <td class="code leading">
@@ -135,10 +151,10 @@ implement <code>geometry</code> on <code>rect</code>s.</p>
         
         <tr>
           <td class="docs">
-            <p>If a variable has an interface type, then we can call
-methods that are in the named interface. Here&rsquo;s a
-generic <code>measure</code> function taking advantage of this
-to work on any <code>geometry</code>.</p>
+            <p>Se uma variável possuir um tipo interface, podemos chamar
+métodos que estão na interface nomeada. Aqui está uma
+função de <code>measure</code> genérica que aproveita isso para
+trabalhar em qualquer <code>geometry</code>.</p>
 
           </td>
           <td class="code leading">
@@ -169,10 +185,10 @@ to work on any <code>geometry</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>The <code>circle</code> and <code>rect</code> struct types both
-implement the <code>geometry</code> interface so we can use
-instances of
-these structs as arguments to <code>measure</code>.</p>
+            <p>Os tipos struct <code>circle</code> e<code>rect</code> implementam a
+interface <code>geometry</code> para que possamos usar
+instâncias dessas estruturas como argumentos para
+<code>measure</code>.</p>
 
           </td>
           <td class="code">
@@ -209,8 +225,8 @@ these structs as arguments to <code>measure</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>To learn more about Go&rsquo;s interfaces, check out this
-<a href="http://jordanorelli.tumblr.com/post/32665860244/how-to-use-interfaces-in-go">great blog post</a>.</p>
+            <p>Para saber mais sobre as interfaces do Go, confira
+este ótimo <a href="http://jordanorelli.tumblr.com/post/32665860244/how-to-use-interfaces-in-go">post do blog</a>.</p>
 
           </td>
           <td class="code empty">
@@ -223,11 +239,11 @@ these structs as arguments to <code>measure</code>.</p>
       
       
       <p class="next">
-        Next example: <a href="errors">Errors</a>.
+        Próximo exemplo: <a href="errors">Errors</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/interfaces">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/interfaces">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

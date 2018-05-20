@@ -1,9 +1,9 @@
-// By default channels are _unbuffered_, meaning that they
-// will only accept sends (`chan <-`) if there is a
-// corresponding receive (`<- chan`) ready to receive the
-// sent value. _Buffered channels_ accept a limited
-// number of  values without a corresponding receiver for
-// those values.
+// Por padrão, os canais não usam buffer, o que significa
+// que eles só aceitarão envios (`chan <-`) se houver um
+// recebimento correspondente (`<- chan`) pronto para receber
+// o valor enviado. Os canais com buffer aceitam um número
+// limitado de valores sem um receptor correspondente para
+// esses valores.
 
 package main
 
@@ -11,17 +11,18 @@ import "fmt"
 
 func main() {
 
-    // Here we `make` a channel of strings buffering up to
-    // 2 values.
+    // Aqui usamos 'make' para criar um canal de strings para
+    // armazenar dois 2 valores.
     messages := make(chan string, 2)
 
-    // Because this channel is buffered, we can send these
-    // values into the channel without a corresponding
-    // concurrent receive.
+    // Como esse canal possui um buffer, podemos enviar estes
+    // valores para o canal sem um recebimento simultâneo
+    // correspondente.
     messages <- "buffered"
     messages <- "channel"
 
-    // Later we can receive these two values as usual.
+    // Como de costume, podemos receber estes dois valores
+    // mais tarde.
     fmt.Println(<-messages)
     fmt.Println(<-messages)
 }

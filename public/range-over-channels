@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Range over Channels</title>
+    <title>Go por Exemplo: Range over Channels</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,18 +18,19 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="range-over-channels">
-      <h2><a href="./">Go by Example</a>: Range over Channels</h2>
+      <h2><a href="./">Go por Exemplo</a>: Range over Channels</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>In a <a href="range">previous</a> example we saw how <code>for</code> and
-<code>range</code> provide iteration over basic data structures.
-We can also use this syntax to iterate over
-values received from a channel.</p>
+            <p>Em um exemplo <a href="range">anterior</a>, vimos como <code>for</code> e
+<code>range</code> fornecem iteração sobre estruturas de dados
+básicas. Também podemos usar essa sintaxe para iterar
+os valores recebidos de um canal.</p>
 
           </td>
           <td class="code empty leading">
@@ -42,7 +44,7 @@ values received from a channel.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/I63ge2ISDs"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/yFJIpO8bUo1"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -75,7 +77,7 @@ values received from a channel.</p>
         
         <tr>
           <td class="docs">
-            <p>We&rsquo;ll iterate over 2 values in the <code>queue</code> channel.</p>
+            <p>Vamos iterar sobre dois valores no canal <code>queue</code>.</p>
 
           </td>
           <td class="code leading">
@@ -91,10 +93,10 @@ values received from a channel.</p>
         
         <tr>
           <td class="docs">
-            <p>This <code>range</code> iterates over each element as it&rsquo;s
-received from <code>queue</code>. Because we <code>close</code>d the
-channel above, the iteration terminates after
-receiving the 2 elements.</p>
+            <p>Este <code>range</code> itera sobre cada elemento conforme
+é recebido de <code>queue</code>. Invocamos <code>close</code> para fechar
+o canal acima, pois a iteração terminará depois de
+receber os dois elementos.</p>
 
           </td>
           <td class="code">
@@ -128,9 +130,9 @@ receiving the 2 elements.</p>
         
         <tr>
           <td class="docs">
-            <p>This example also showed that it&rsquo;s possible to close
-a non-empty channel but still have the remaining
-values be received.</p>
+            <p>Este exemplo também mostrou que é possível fechar
+um canal que não está vazio, mas ainda assim os
+valores restantes serão recebidos.</p>
 
           </td>
           <td class="code empty">
@@ -143,11 +145,11 @@ values be received.</p>
       
       
       <p class="next">
-        Next example: <a href="timers">Timers</a>.
+        Próximo exemplo: <a href="timers">Timers</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/range-over-channels">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/range-over-channels">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

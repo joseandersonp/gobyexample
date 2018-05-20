@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Hello World</title>
+    <title>Go por Exemplo: Hello World</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="hello-world">
-      <h2><a href="./">Go by Example</a>: Hello World</h2>
+      <h2><a href="./">Go por Exemplo</a>: Hello World</h2>
       
       <table>
         
@@ -128,11 +130,11 @@ em Go, vamos aprender mais sobre a linguagem.</p>
       
       
       <p class="next">
-        Next example: <a href="values">Values</a>.
+        Próximo exemplo: <a href="values">Values</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/hello-world">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/hello-world">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

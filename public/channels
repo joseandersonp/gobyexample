@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Channels</title>
+    <title>Go por Exemplo: Channels</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,18 +18,19 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="channels">
-      <h2><a href="./">Go by Example</a>: Channels</h2>
+      <h2><a href="./">Go por Exemplo</a>: Channels</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p><em>Channels</em> are the pipes that connect concurrent
-goroutines. You can send values into channels from one
-goroutine and receive those values into another
-goroutine.</p>
+            <p><em>Canais</em> são os vias que conectam goroutines
+concorrentes. Você pode enviar valores para os
+canais de uma goroutine e receber esses valores
+em outra goroutine.</p>
 
           </td>
           <td class="code empty leading">
@@ -42,7 +44,7 @@ goroutine.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/Kd8B0T_JGK"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/yVfX6jRXVxN"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -75,8 +77,9 @@ goroutine.</p>
         
         <tr>
           <td class="docs">
-            <p>Create a new channel with <code>make(chan val-type)</code>.
-Channels are typed by the values they convey.</p>
+            <p>Crie um novo canal com <code>make(chan tipo-valor)</code>.
+Os canais são do tipo dos valores que eles
+transmitem.</p>
 
           </td>
           <td class="code leading">
@@ -89,9 +92,10 @@ Channels are typed by the values they convey.</p>
         
         <tr>
           <td class="docs">
-            <p><em>Send</em> a value into a channel using the <code>channel &lt;-</code>
-syntax. Here we send <code>&quot;ping&quot;</code>  to the <code>messages</code>
-channel we made above, from a new goroutine.</p>
+            <p><em>Envie</em> um valor para um canal usando a sintaxe
+<code>canal &lt;-</code>. Aqui nós enviamos <code>&quot;ping&quot;</code> para o
+canal <code>messages</code> que fizemos anteriormente de
+outra nova goroutine.</p>
 
           </td>
           <td class="code leading">
@@ -104,9 +108,9 @@ channel we made above, from a new goroutine.</p>
         
         <tr>
           <td class="docs">
-            <p>The <code>&lt;-channel</code> syntax <em>receives</em> a value from the
-channel. Here we&rsquo;ll receive the <code>&quot;ping&quot;</code> message
-we sent above and print it out.</p>
+            <p>A sintaxe <code>&lt;-canal</code> recebe um valor do canal.
+Aqui vamos receber a mensagem <code>&quot;ping&quot;</code> que
+enviamos anteriormente e apresentamos na tela.</p>
 
           </td>
           <td class="code">
@@ -125,9 +129,9 @@ we sent above and print it out.</p>
         
         <tr>
           <td class="docs">
-            <p>When we run the program the <code>&quot;ping&quot;</code> message is
-successfully passed from one goroutine to another via
-our channel.</p>
+            <p>Quando executamos o programa, a mensagem <code>&quot;ping&quot;</code> é
+passada com sucesso de uma goroutine para outra
+através do nosso canal.</p>
 
           </td>
           <td class="code leading">
@@ -141,10 +145,11 @@ our channel.</p>
         
         <tr>
           <td class="docs">
-            <p>By default sends and receives block until both the
-sender and receiver are ready. This property allowed
-us to wait at the end of our program for the <code>&quot;ping&quot;</code>
-message without having to use any other synchronization.</p>
+            <p>Por padrão, a envios e as recebimentos são bloqueadas
+até que o receptor e o transmissor estejam prontos.
+Esta propriedade nos permite esperar até o final do
+programa pela mensagem &ldquo;ping&rdquo; sem ter que usar
+qualquer outro tipo de sincronização.</p>
 
           </td>
           <td class="code empty">
@@ -157,11 +162,11 @@ message without having to use any other synchronization.</p>
       
       
       <p class="next">
-        Next example: <a href="channel-buffering">Channel Buffering</a>.
+        Próximo exemplo: <a href="channel-buffering">Channel Buffering</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/channels">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/channels">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

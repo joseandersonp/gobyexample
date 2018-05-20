@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Regular Expressions</title>
+    <title>Go por Exemplo: Regular Expressions</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="regular-expressions">
-      <h2><a href="./">Go by Example</a>: Regular Expressions</h2>
+      <h2><a href="./">Go por Exemplo</a>: Regular Expressions</h2>
       
       <table>
         
@@ -329,11 +331,11 @@ the <a href="http://golang.org/pkg/regexp/"><code>regexp</code></a> package docs
       
       
       <p class="next">
-        Next example: <a href="json">JSON</a>.
+        Próximo exemplo: <a href="json">JSON</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/regular-expressions">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/regular-expressions">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

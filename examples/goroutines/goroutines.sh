@@ -1,7 +1,8 @@
-# Quando executamos este programa, vemos a saída da primeira 
-# chamada, depois a saída intercalada das duas goroutines. 
-# Essa intercalação reflete as goroutines sendo executadas 
-# simultaneamente em tempo de execução do Go.
+# Quando executamos este programa, vemos a saída da 
+# primeira chamada, depois a saída intercalada das 
+# duas gorrotinas. Essa intercalação reflete as 
+# gorrotinas sendo executadas simultaneamente em 
+# tempo de execução do Go.
 $ go run goroutines.go
 direct : 0
 direct : 1
@@ -13,5 +14,5 @@ goroutine : 2
 <enter>
 done
 
-# A seguir, veremos um complemento para goroutines
-# em programas concorrentes em Go: channels.
+# A seguir, veremos um complemento para gorrotinas
+# em programas concorrentes em Go: Canais.

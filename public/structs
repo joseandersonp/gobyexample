@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Structs</title>
+    <title>Go por Exemplo: Structs</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,17 +18,18 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="structs">
-      <h2><a href="./">Go by Example</a>: Structs</h2>
+      <h2><a href="./">Go por Exemplo</a>: Structs</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>Go&rsquo;s <em>structs</em> are typed collections of fields.
-They&rsquo;re useful for grouping data together to form
-records.</p>
+            <p>Os <em>structs</em> do Go são coleções de campos com tipos
+específicos. Eles são úteis para agrupar dado e
+formar registros.</p>
 
           </td>
           <td class="code empty leading">
@@ -41,7 +43,7 @@ records.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/OMCP5KFC10"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/tYEyvocM_yC"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -62,7 +64,8 @@ records.</p>
         
         <tr>
           <td class="docs">
-            <p>This <code>person</code> struct type has <code>name</code> and <code>age</code> fields.</p>
+            <p>Esse struct do tipo <code>person</code> possui os camos <code>name</code>
+e <code>age</code></p>
 
           </td>
           <td class="code leading">
@@ -90,7 +93,7 @@ records.</p>
         
         <tr>
           <td class="docs">
-            <p>This syntax creates a new struct.</p>
+            <p>Essa sintaxe cria um novo struct.</p>
 
           </td>
           <td class="code leading">
@@ -103,7 +106,7 @@ records.</p>
         
         <tr>
           <td class="docs">
-            <p>You can name the fields when initializing a struct.</p>
+            <p>Você pode nomear os campos ao inicializar um struct.</p>
 
           </td>
           <td class="code leading">
@@ -116,7 +119,7 @@ records.</p>
         
         <tr>
           <td class="docs">
-            <p>Omitted fields will be zero-valued.</p>
+            <p>Os campos omitidos terão valor-zero.</p>
 
           </td>
           <td class="code leading">
@@ -129,7 +132,7 @@ records.</p>
         
         <tr>
           <td class="docs">
-            <p>An <code>&amp;</code> prefix yields a pointer to the struct.</p>
+            <p>Um prefixo <code>&amp;</code> produz um ponteiro para o struct.</p>
 
           </td>
           <td class="code leading">
@@ -142,7 +145,7 @@ records.</p>
         
         <tr>
           <td class="docs">
-            <p>Access struct fields with a dot.</p>
+            <p>Acesse os campos do struct com um ponto.</p>
 
           </td>
           <td class="code leading">
@@ -156,8 +159,9 @@ records.</p>
         
         <tr>
           <td class="docs">
-            <p>You can also use dots with struct pointers - the
-pointers are automatically dereferenced.</p>
+            <p>Você também pode usar pontos com os ponteiros
+de structs - os ponteiros são automaticamente
+desreferenciados.</p>
 
           </td>
           <td class="code leading">
@@ -171,7 +175,7 @@ pointers are automatically dereferenced.</p>
         
         <tr>
           <td class="docs">
-            <p>Structs are mutable.</p>
+            <p>Structs são mutáveis.</p>
 
           </td>
           <td class="code">
@@ -211,11 +215,11 @@ pointers are automatically dereferenced.</p>
       
       
       <p class="next">
-        Next example: <a href="methods">Methods</a>.
+        Próximo exemplo: <a href="methods">Methods</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/structs">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/structs">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

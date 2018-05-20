@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Errors</title>
+    <title>Go por Exemplo: Errors</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,22 +18,23 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="errors">
-      <h2><a href="./">Go by Example</a>: Errors</h2>
+      <h2><a href="./">Go por Exemplo</a>: Errors</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>In Go it&rsquo;s idiomatic to communicate errors via an
-explicit, separate return value. This contrasts with
-the exceptions used in languages like Java and Ruby and
-the overloaded single result / error value sometimes
-used in C. Go&rsquo;s approach makes it easy to see which
-functions return errors and to handle them using the
-same language constructs employed for any other,
-non-error tasks.</p>
+            <p>Em Go, é idiomático comunicar erros por meio de um
+explícito, valor de retorno separado. Isso contrasta com
+as exceções usadas em linguagens como Java e Ruby e o
+uníco valor sobrecarregado de resultado / erro às vezes
+usado em C. A abordagem de Go facilita a visualização de
+quais funções retornam erros e os manipulm usando as
+mesmas construções de linguagem empregadas para quaisquer
+outras tarefas que não sejam de erro.</p>
 
           </td>
           <td class="code empty leading">
@@ -46,7 +48,7 @@ non-error tasks.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/mP_ZR1qjUvA"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/AKrah6jBK68"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -68,8 +70,9 @@ non-error tasks.</p>
         
         <tr>
           <td class="docs">
-            <p>By convention, errors are the last return value and
-have type <code>error</code>, a built-in interface.</p>
+            <p>Por convenção, os erros são o últimos valores de
+retorno e possuem o tipo <code>error</code>, uma interface
+incorporada do Go.</p>
 
           </td>
           <td class="code leading">
@@ -83,9 +86,20 @@ have type <code>error</code>, a built-in interface.</p>
         
         <tr>
           <td class="docs">
-            <p><code>errors.New</code> constructs a basic <code>error</code> value
-with the given error message.</p>
+            <p>mensagem de erro fornecida.</p>
 
+          </td>
+          <td class="code leading">
+	        
+            <div class="highlight"><pre>        <span class="c1">//`errors.New` gera um valor de erro básico com a</span>
+</pre></div>
+
+          </td>
+        </tr>
+        
+        <tr>
+          <td class="docs">
+            
           </td>
           <td class="code leading">
 	        
@@ -109,8 +123,8 @@ with the given error message.</p>
         
         <tr>
           <td class="docs">
-            <p>A <code>nil</code> value in the error position indicates that
-there was no error.</p>
+            <p>Um valor <code>nil</code> na posição do erro indica que não
+houve erro.</p>
 
           </td>
           <td class="code leading">
@@ -124,10 +138,10 @@ there was no error.</p>
         
         <tr>
           <td class="docs">
-            <p>It&rsquo;s possible to use custom types as <code>error</code>s by
-implementing the <code>Error()</code> method on them. Here&rsquo;s a
-variant on the example above that uses a custom type
-to explicitly represent an argument error.</p>
+            <p>É possível usar tipos customizados como <code>error</code>s pela
+implementação do método <code>Error()</code>. Aqui temos uma
+variante no exemplo anterior que usa um tipo personalizado
+para representar explicitamente um argumento de erro.</p>
 
           </td>
           <td class="code leading">
@@ -170,9 +184,9 @@ to explicitly represent an argument error.</p>
         
         <tr>
           <td class="docs">
-            <p>In this case we use <code>&amp;argError</code> syntax to build
-a new struct, supplying values for the two
-fields <code>arg</code> and <code>prob</code>.</p>
+            <p>Neste caso, usamos a sintaxe <code>&amp;argError</code> para
+criar uma nova estrutura, fornecendo valores
+para os dois campos <code>arg</code> e <code>prob</code>.</p>
 
           </td>
           <td class="code leading">
@@ -200,10 +214,10 @@ fields <code>arg</code> and <code>prob</code>.</p>
         
         <tr>
           <td class="docs">
-            <p>The two loops below test out each of our
-error-returning functions. Note that the use of an
-inline error check on the <code>if</code> line is a common
-idiom in Go code.</p>
+            <p>Os dois loops abaixo testam cada uma das nossas
+funções de retorno de erros. Note que o uso de uma
+verificação de erro em linha na declaração <code>if</code> é
+comum na idiomática do código do Go.</p>
 
           </td>
           <td class="code leading">
@@ -229,10 +243,10 @@ idiom in Go code.</p>
         
         <tr>
           <td class="docs">
-            <p>If you want to programmatically use the data in
-a custom error, you&rsquo;ll need to get the error as an
-instance of the custom error type via type
-assertion.</p>
+            <p>Se você quiser usar programaticamente os dados em um
+erro personalizado, você precisará obter o erro como
+uma instância do tipo de erro personalizado por meio
+de declaração de tipo.</p>
 
           </td>
           <td class="code">
@@ -272,8 +286,8 @@ assertion.</p>
         
         <tr>
           <td class="docs">
-            <p>See this <a href="http://blog.golang.org/2011/07/error-handling-and-go.html">great post</a>
-on the Go blog for more on error handling.</p>
+            <p>Veja essa <a href="http://blog.golang.org/2011/07/error-handling-and-go.html">ótima postagem</a>
+no blog do Go para saber mais sobre tratamento de erros.</p>
 
           </td>
           <td class="code empty">
@@ -286,11 +300,11 @@ on the Go blog for more on error handling.</p>
       
       
       <p class="next">
-        Next example: <a href="goroutines">Goroutines</a>.
+        Próximo exemplo: <a href="goroutines">Goroutines</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/errors">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/errors">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

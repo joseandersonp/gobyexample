@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Multiple Return Values</title>
+    <title>Go por Exemplo: Multiple Return Values</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="multiple-return-values">
-      <h2><a href="./">Go by Example</a>: Multiple Return Values</h2>
+      <h2><a href="./">Go por Exemplo</a>: Multiple Return Values</h2>
       
       <table>
         
@@ -42,7 +44,7 @@ erro de uma função.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/NV7DlOGrHqS"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/uABsvnb8FWo"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -107,18 +109,6 @@ da função com <em>atribuição múltipla</em>.</p>
         
         <tr>
           <td class="docs">
-            <p>If you only want a subset of the returned values,
-use the blank identifier <code>_</code>.</p>
-
-          </td>
-          <td class="code empty leading">
-	        
-            
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
             <p>Se você quiser apenas um subconjunto dos valores
 retornados, use o <em>identificador de ausência</em> <code>_</code>.</p>
 
@@ -169,11 +159,11 @@ como veremos a seguir.</p>
       
       
       <p class="next">
-        Next example: <a href="variadic-functions">Variadic Functions</a>.
+        Próximo exemplo: <a href="variadic-functions">Variadic Functions</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/multiple-return-values">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/multiple-return-values">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

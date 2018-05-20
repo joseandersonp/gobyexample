@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Sorting by Functions</title>
+    <title>Go por Exemplo: Sorting by Functions</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="sorting-by-functions">
-      <h2><a href="./">Go by Example</a>: Sorting by Functions</h2>
+      <h2><a href="./">Go por Exemplo</a>: Sorting by Functions</h2>
       
       <table>
         
@@ -164,11 +166,11 @@ functions.</p>
       
       
       <p class="next">
-        Next example: <a href="panic">Panic</a>.
+        Próximo exemplo: <a href="panic">Panic</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/sorting-by-functions">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/sorting-by-functions">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

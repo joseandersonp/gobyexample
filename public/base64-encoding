@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Base64 Encoding</title>
+    <title>Go por Exemplo: Base64 Encoding</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="base64-encoding">
-      <h2><a href="./">Go by Example</a>: Base64 Encoding</h2>
+      <h2><a href="./">Go por Exemplo</a>: Base64 Encoding</h2>
       
       <table>
         
@@ -178,11 +180,11 @@ but they both decode to the original string as desired.</p>
       
       
       <p class="next">
-        Next example: <a href="reading-files">Reading Files</a>.
+        Próximo exemplo: <a href="reading-files">Reading Files</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/base64-encoding">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/base64-encoding">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Sorting</title>
+    <title>Go por Exemplo: Sorting</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,9 +18,10 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="sorting">
-      <h2><a href="./">Go by Example</a>: Sorting</h2>
+      <h2><a href="./">Go por Exemplo</a>: Sorting</h2>
       
       <table>
         
@@ -147,11 +149,11 @@ slices and <code>true</code> as the result of our <code>AreSorted</code> test.</
       
       
       <p class="next">
-        Next example: <a href="sorting-by-functions">Sorting by Functions</a>.
+        Próximo exemplo: <a href="sorting-by-functions">Sorting by Functions</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/sorting">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/sorting">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

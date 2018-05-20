@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Non-Blocking Channel Operations</title>
+    <title>Go por Exemplo: Non-Blocking Channel Operations</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,32 +18,23 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="non-blocking-channel-operations">
-      <h2><a href="./">Go by Example</a>: Non-Blocking Channel Operations</h2>
+      <h2><a href="./">Go por Exemplo</a>: Non-Blocking Channel Operations</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p>Basic sends and receives on channels are blocking.
-However, we can use <code>select</code> with a <code>default</code> clause to
-implement <em>non-blocking</em> sends, receives, and even
-non-blocking multi-way <code>select</code>s.</p>
+            <p>Envios e recebimentos básicos nos canais são bloqueados.
+No entanto, podemos usar usar <code>select</code> com uma condição
+<code>default</code> para implementar envios, recebimentos, e até
+mesmo <code>select</code>s multidirecionais <em>sem bloqueio</em>.</p>
 
           </td>
-          <td class="code empty leading">
-	        
-            
-          </td>
-        </tr>
-        
-        <tr>
-          <td class="docs">
-            
-          </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/n5ttmOsMrrJ"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/nak-C0_V6-t"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -77,10 +69,10 @@ non-blocking multi-way <code>select</code>s.</p>
         
         <tr>
           <td class="docs">
-            <p>Here&rsquo;s a non-blocking receive. If a value is
-available on <code>messages</code> then <code>select</code> will take
-the <code>&lt;-messages</code> <code>case</code> with that value. If not
-it will immediately take the <code>default</code> case.</p>
+            <p>Aqui está um recebimento sem bloqueio. Se um valor
+estiver disponível em <code>messages</code>, então <code>select</code>
+irá executar o case <code>&lt;-messages</code> com esse valor.
+Se não, ele executará imediatamente o case <code>default</code>.</p>
 
           </td>
           <td class="code leading">
@@ -98,10 +90,10 @@ it will immediately take the <code>default</code> case.</p>
         
         <tr>
           <td class="docs">
-            <p>A non-blocking send works similarly. Here <code>msg</code>
-cannot be sent to the <code>messages</code> channel, because
-the channel has no buffer and there is no receiver.
-Therefore the <code>default</code> case is selected.</p>
+            <p>Um envio sem bloqueio funciona de maneira semelhante.
+Aqui o <code>msg</code> não pode ser enviado para o canal
+<code>messages</code>, porque o canal não tem buffer e não há
+receptor. Portanto, o case <code>default</code> é executado.</p>
 
           </td>
           <td class="code leading">
@@ -120,10 +112,10 @@ Therefore the <code>default</code> case is selected.</p>
         
         <tr>
           <td class="docs">
-            <p>We can use multiple <code>case</code>s above the <code>default</code>
-clause to implement a multi-way non-blocking
-select. Here we attempt non-blocking receives
-on both <code>messages</code> and <code>signals</code>.</p>
+            <p>Podemos usar vários <code>cases</code> acima de <code>default</code> para
+implementar uma select multidirecional sem bloqueio.
+Aqui tentamos recebimentos sem bloqueio tanto em
+<code>messages</code> quanto em <code>signals</code>.</p>
 
           </td>
           <td class="code">
@@ -165,11 +157,11 @@ on both <code>messages</code> and <code>signals</code>.</p>
       
       
       <p class="next">
-        Next example: <a href="closing-channels">Closing Channels</a>.
+        Próximo exemplo: <a href="closing-channels">Closing Channels</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/non-blocking-channel-operations">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/non-blocking-channel-operations">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

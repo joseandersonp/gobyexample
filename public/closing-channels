@@ -2,9 +2,10 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Go by Example: Closing Channels</title>
+    <title>Go por Exemplo: Closing Channels</title>
     <link rel=stylesheet href="site.css">
   </head>
+  <!--
   <script type="text/javascript">
     if (window.location.host == "gobyexample.com") {
       var _gaq = _gaq || [];
@@ -17,17 +18,18 @@
       })();
     }
   </script>
+  -->
   <body>
     <div class="example" id="closing-channels">
-      <h2><a href="./">Go by Example</a>: Closing Channels</h2>
+      <h2><a href="./">Go por Exemplo</a>: Closing Channels</h2>
       
       <table>
         
         <tr>
           <td class="docs">
-            <p><em>Closing</em> a channel indicates that no more values
-will be sent on it. This can be useful to communicate
-completion to the channel&rsquo;s receivers.</p>
+            <p><em>Fechar</em> um canal indica que os valores não serão
+mais enviados por este. Isso pode ser útil para
+comunicar a conclusão aos canais receptores.</p>
 
           </td>
           <td class="code empty leading">
@@ -41,7 +43,7 @@ completion to the channel&rsquo;s receivers.</p>
             
           </td>
           <td class="code leading">
-	        <a href="http://play.golang.org/p/eFZ2SeKswH"><img title="Run code" src="play.png" class="run" /></a>
+	        <a href="http://play.golang.org/p/NMNn5nSaFh1"><img title="Run code" src="play.png" class="run" /></a>
             <div class="highlight"><pre><span class="kn">package</span> <span class="nx">main</span>
 </pre></div>
 
@@ -62,10 +64,11 @@ completion to the channel&rsquo;s receivers.</p>
         
         <tr>
           <td class="docs">
-            <p>In this example we&rsquo;ll use a <code>jobs</code> channel to
-communicate work to be done from the <code>main()</code> goroutine
-to a worker goroutine. When we have no more jobs for
-the worker we&rsquo;ll <code>close</code> the <code>jobs</code> channel.</p>
+            <p>Neste exemplo, vamos usar o canal <code>jobs</code> para comunicar
+o trabalho a ser executado a partir da gorrotina <code>main()</code>
+para a gorrotina <em>trabalhador</em>. Quando não houver mais
+trabalhos (jobs) para trabalhador, fecharemos o canal
+<code>jobs</code> com a função incorporada <code>close</code>.</p>
 
           </td>
           <td class="code leading">
@@ -80,13 +83,12 @@ the worker we&rsquo;ll <code>close</code> the <code>jobs</code> channel.</p>
         
         <tr>
           <td class="docs">
-            <p>Here&rsquo;s the worker goroutine. It repeatedly receives
-from <code>jobs</code> with <code>j, more := &lt;-jobs</code>. In this
-special 2-value form of receive, the <code>more</code> value
-will be <code>false</code> if <code>jobs</code> has been <code>close</code>d and all
-values in the channel have already been received.
-We use this to notify on <code>done</code> when we&rsquo;ve worked
-all our jobs.</p>
+            <p>Aqui está a gorrotina trabalhador. Ela recebe continuamente
+de <code>jobs</code> com <code>j, more: = &lt;-jobs</code>. Nesta forma de recepção
+de dois valores, o valor <code>more</code> será <code>false</code> se <code>jobs</code> tiver
+sido fechado com <code>close</code> e todos os valores já tiverem sido
+recebidos pelo canal. Usamos isso para notificar em <code>done</code>
+o encerramento de todos os nossos trabalhos.</p>
 
           </td>
           <td class="code leading">
@@ -110,8 +112,8 @@ all our jobs.</p>
         
         <tr>
           <td class="docs">
-            <p>This sends 3 jobs to the worker over the <code>jobs</code>
-channel, then closes it.</p>
+            <p>Enviamos três trabalhos para o trabalhador através do canal
+<code>jobs</code>, depois o fechamos com <code>close</code>.</p>
 
           </td>
           <td class="code leading">
@@ -129,9 +131,9 @@ channel, then closes it.</p>
         
         <tr>
           <td class="docs">
-            <p>We await the worker using the
-<a href="channel-synchronization">synchronization</a> approach
-we saw earlier.</p>
+            <p>Aguardamos a finalização do trabalhador usando a abordagem
+de sincronização(channel-synchronization) que vimos
+anteriormente.</p>
 
           </td>
           <td class="code">
@@ -169,8 +171,8 @@ we saw earlier.</p>
         
         <tr>
           <td class="docs">
-            <p>The idea of closed channels leads naturally to our next
-example: <code>range</code> over channels.</p>
+            <p>A ideia de fechamento de canais conduz naturalmente ao
+nosso próximo exemplo: <code>range</code> sobre canais.</p>
 
           </td>
           <td class="code empty">
@@ -183,11 +185,11 @@ example: <code>range</code> over channels.</p>
       
       
       <p class="next">
-        Next example: <a href="range-over-channels">Range over Channels</a>.
+        Próximo exemplo: <a href="range-over-channels">Range over Channels</a>.
       </p>
       
       <p class="footer">
-        by <a href="https://twitter.com/mmcgrana">@mmcgrana</a> | <a href="mailto:mmcgrana@gmail.com">feedback</a> | <a href="https://github.com/mmcgrana/gobyexample/blob/master/examples/closing-channels">source</a> | <a href="https://github.com/mmcgrana/gobyexample#license">license</a>
+        por José Anderson Pereira | <a href="mailto:joseandersonpereira@gmail.com">feedback</a> | <a href="https://github.com/joseandersonp/gobyexample/blob/master/examples/closing-channels">código-fonte</a> | <a href="https://github.com/joseandersonp/gobyexample#licença">licença</a>
       </p>
     </div>
   </body>

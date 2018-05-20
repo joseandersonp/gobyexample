@@ -8,5 +8,5 @@ received job 3
 sent all jobs
 received all jobs
 
-# The idea of closed channels leads naturally to our next
-# example: `range` over channels.
+# A ideia de fechamento de canais conduz naturalmente ao
+# nosso próximo exemplo: `range` sobre canais.
