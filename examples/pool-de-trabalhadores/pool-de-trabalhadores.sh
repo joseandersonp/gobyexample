@@ -1,8 +1,8 @@
-# Nosso programa em execução mostra os cinco tarefas sendo 
-# executadas por vários trabalhadores. O programa leva
-# apenas cerca de dois segundos, apesar de fazer cerca de 
-# cinco segundos de trabalho total, porque há três 
-# trabalhadores operando simultaneamente.
+# Nosso programa em execução mostra os cinco tarefas
+# sendo executadas por vários trabalhadores. O programa 
+# leva apenas cerca de dois segundos, apesar de fazer 
+# cerca de cinco segundos de trabalho total, porque há
+# três trabalhadores operando simultaneamente.
 $ time go run worker-pools.go 
 worker 1 started  job 1
 worker 2 started  job 2
