@@ -31,7 +31,7 @@ Fechamento de Canais
 Range sobre Canais
 Timers
 Tickers
-Worker Pools
+Pool de trabalhadores
 Rate Limiting
 Atomic Counters
 Mutexes
