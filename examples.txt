@@ -32,7 +32,7 @@ Range sobre Canais
 Timers
 Tickers
 Pool de trabalhadores
-Rate Limiting
+Limite de Taxa
 Atomic Counters
 Mutexes
 Stateful Goroutines
