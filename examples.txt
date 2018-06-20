@@ -33,7 +33,7 @@ Timers
 Tickers
 Pool de trabalhadores
 Limite de taxa
-Atomic Counters
+Contadores atômicos
 Mutexes
 Stateful Goroutines
 Sorting
